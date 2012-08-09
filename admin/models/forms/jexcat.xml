@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf8"?>
+<form
+	addrulepath="/administrator/components/com_jexpricelist/models/rules"
+>
+	<fieldset name="details">
+		<field
+			name="id"
+			type="hidden"
+		/>
+		<field
+			name="title"
+			type="text"
+			label="COM_JEXPRICELIST_JEXPRICECAT_TITLE_LABEL"
+			description="COM_JEXPRICELIST_JEXPRICECAT_TITLE_DESC"
+			size="70"
+			class="inputbox"			
+			required="true"
+			default=""
+		/>
+		<field
+			name="text_1"
+			type="text"
+			label="COM_JEXPRICELIST_JEXPRICELIST_PRICECLASS_LABEL_1"
+			description="COM_JEXPRICELIST_JEXPRICELIST_PRICECLASS_DESC"
+			size="80"
+			class="inputbox"			
+			required="true"
+			default="1"
+		/>
+		<field
+			name="text_2"
+			type="text"
+			label="COM_JEXPRICELIST_JEXPRICELIST_PRICECLASS_LABEL_2"
+			description="COM_JEXPRICELIST_JEXPRICELIST_PRICECLASS_DESC"
+			size="80"
+			class="inputbox"			
+			required="true"
+			default="2"
+		/>
+		<field
+			name="text_3"
+			type="text"
+			label="COM_JEXPRICELIST_JEXPRICELIST_PRICECLASS_LABEL_3"
+			description="COM_JEXPRICELIST_JEXPRICELIST_PRICECLASS_DESC"
+			size="80"
+			class="inputbox"			
+			required="true"
+			default="3"
+		/>		
+	</fieldset>
+</form>

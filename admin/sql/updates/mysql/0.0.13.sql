@@ -1,0 +1,1 @@
+ALTER TABLE `#__jexpricelist` ADD `params` VARCHAR(1024) NOT NULL DEFAULT '';

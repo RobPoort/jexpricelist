@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf8"?>
+<form
+	addrulepath="/administrator/components/com_jexpricelist/models/rules"
+>
+	<fieldset name="details">
+		<field
+			name="id"
+			type="hidden"
+		/>
+		<field
+			name="price_item"
+			type="text"
+			label="COM_JEXPRICELIST_JEXPRICELIST_PRICEITEM_LABEL"
+			description="COM_JEXPRICELIST_JEXPRICELIST_PRICEITEM_DESC"
+			size="80"
+			class="inputbox validate-price_item"
+			validate="priceitem"
+			required="true"
+			default=""
+		/>
+		<field
+			name="price_1"
+			type="text"
+			label="COM_JEXPRICELIST_JEXPRICELIST_PRICE_LABEL"
+			description="COM_JEXPRICELIST_JEXPRICELIST_PRICE_DESC"
+			size="15"
+			class="inputbox validate-price"
+			validate="price"
+			required="true"
+			default="0.00"
+		/>
+		<field
+			name="price_2"
+			type="text"
+			label="COM_JEXPRICELIST_JEXPRICELIST_PRICE_LABEL"
+			description="COM_JEXPRICELIST_JEXPRICELIST_PRICE_DESC"
+			size="15"
+			class="inputbox validate-price"
+			validate="price"
+			required="true"
+			default="0.00"
+		/>
+		<field
+			name="price_3"
+			type="text"
+			label="COM_JEXPRICELIST_JEXPRICELIST_PRICE_LABEL"
+			description="COM_JEXPRICELIST_JEXPRICELIST_PRICE_DESC"
+			size="15"
+			class="inputbox validate-price"
+			validate="price"
+			required="true"
+			default="0.00"
+		/>
+		<field
+			name="catid"
+			type="category"
+			extension="com_jexpricelist"
+			class="inputbox"
+			default=""
+			label="COM_JEXPRICELIST_JEXPRICELIST_FIELD_CATID_LABEL"
+			description="COM_JEXPRICELIST_JEXPRICELIST_FIELD_CATID_DESC"
+			required="true"
+		>
+			<option value="0">JOPTION_SELECT_CATEGORY</option>
+		</field>
+	</fieldset>
+	<fields name="params">
+		<fieldset
+			name="params"
+			label="JGLOBAL_FIELDSET_DISPLAY_OPTIONS"
+		>
+			<field
+				name="show_category"
+				type="list"
+				label="COM_JEXPRICELIST_JEXPRICELIST_FIELD_SHOW_CATEGORY_LABEL"
+				description="COM_JEXPRICELIST_JEXPRICELIST_FIELD_SHOW_CATEGORY_DESC"
+				default=""
+			>
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+		</fieldset>
+	</fields>
+</form>
