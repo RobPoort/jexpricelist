@@ -1,6 +1,7 @@
 <?php
 defined('_JEXEC') or die('Restricted Access');
 
+
 	/**
 	*	script file of the jexpricelist component
 	*/
