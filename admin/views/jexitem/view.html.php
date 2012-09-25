@@ -50,7 +50,7 @@ class JexPricelistViewJexItem extends JView
 		$userId = $user->id;
 		$isNew = $this->item->id == 0;
 		$canDo = JexPricelistHelper::getActions($this->item->id);
-		JToolBarHelper::title($isNew ? JText::_('COM_JEXPRICELIST_MANAGER_JEXTITEM_NEW')
+		JToolBarHelper::title($isNew ? JText::_('COM_JEXPRICELIST_MANAGER_JEXITEM_NEW')
 									: JText::_('COM_JEXPRICELIST_MANAGER_JEXITEM_EDIT'), 'jexpricelist');
 		//built the actions for new and existings records
 		if($isNew)
