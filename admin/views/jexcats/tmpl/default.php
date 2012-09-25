@@ -37,7 +37,9 @@ JHtml::_('behavior.tooltip');
 						<?php echo JHtml::_('grid.id', $i, $item->id); ?>
 					</td>
 					<td>
-						<?php echo $item->title; ?>
+						<a href="index.php?option=com_jexpricelist&task=jexcat.edit&id=<?php echo $item->id; ?>">
+							<?php echo $item->title; ?>
+						</a>
 					</td>					
 					<td>
 						<?php echo $item->text_1; ?>

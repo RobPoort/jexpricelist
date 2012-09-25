@@ -11,7 +11,9 @@ defined('_JEXEC') or die('Restricted Access');
 				<?php echo JHtml::_('grid.id', $i, $item->id); ?>
 			</td>
 			<td>
-				<?php echo $item->price_item; ?>
+				<a href="index.php?option=com_jexpricelist&task=jexitem.edit&id=<?php echo $item->id; ?>" >
+					<?php echo $item->price_item; ?>
+				</a>
 			</td>
 			<td>
 				<?php echo $item->title; ?>
