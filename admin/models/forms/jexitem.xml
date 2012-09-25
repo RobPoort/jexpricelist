@@ -52,6 +52,16 @@
 			default="0.00"
 		/>
 		<field
+			name="published"
+			type="list"
+			label="JSTATUS"
+			description="COM_JEXCHOOSE_PUBLISH_DESC"
+			default="0"
+		>
+			<option value="0">JUNPUBLISHED</option>
+			<option value="1">JPUBLISHED</option>
+		</field>
+		<field
 			name="catid"
 			type="category"
 			extension="com_jexpricelist"
