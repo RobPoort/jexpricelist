@@ -4,7 +4,6 @@ jimport('joomla.html.html');
 ?>
 
 <?php
-//var_dump($this->price_class);
 if($this->items){
 ?>
 <h1>
@@ -85,13 +84,17 @@ if($this->items){
 <?php echo JHtml::_('form.token'); ?>
 <button class="button" onClick="this.form.submit()" name="sendList">Bereken</button>
 <input type="hidden" name="option" value="com_jexpricelist" />
-<input type="hidden" name="task" value="adding.test" />
-<!--<input type="hidden" name="item_price[]" value="<?php $this->item_price; ?>" />-->
+<input type="hidden" name="task" value="adding.addItems" />
 <input type="hidden" name="view" value="adding" />
 </form>
 <div class="clr"></div>
-<!--<a href="wat-kost-een-uitvaart-0-18/?view=email" target="_blank">email</a>-->
+<?php
+	if($this->config->emailOption){
+?>
 <a  class="button" href="<?php echo $this->uri->toString(); ?>/?view=email">Stuur berekening</a>
+<?php
+	}
+?>
 <br/>
 <?php
 }

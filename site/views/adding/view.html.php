@@ -19,6 +19,10 @@ class JexPricelistViewAdding extends JView
 		$this->app = JFactory::getApplication();
 		$this->state = $this->app->getUserStateFromRequest("$this->option", 'selected_in_request');
 		
+		$this->input = $this->app->input;
+		
+		$this->config->emailOption = $this->input->get('emailOption');
+		
 		$this->data = JRequest::get('post');
 		if(!isset($this->state->selector)){
 			$selector = 1;
