@@ -6,7 +6,7 @@ jimport('joomla.application.component.controller');
 class JexPricelistControllerAdding extends JController
 {
 	
-	function test(){
+	function addItems(){
 		
 		
 		//prefix voor de setState key
