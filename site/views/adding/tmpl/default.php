@@ -91,7 +91,7 @@ if($this->items){
 <?php
 	if($this->config->emailOption){
 ?>
-<a  class="button" href="<?php echo $this->uri->toString(); ?>/?view=email">Stuur berekening</a>
+<a  class="button" href="<?php echo $this->uri->toString(); ?>/?view=email"><button class="button" name="send">Stuur berekening</button></a>
 <?php
 	}
 ?>
