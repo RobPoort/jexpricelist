@@ -91,18 +91,10 @@ if($this->items){
 <?php
 	if($this->config->emailOption){
 ?>
-<a  class="button" href="<?php echo $this->uri->toString(); ?>/?view=email"><button class="button" name="send">Stuur berekening</button></a>
+<a  class="button" href="<?php echo $this->uri->toString(); ?>/?view=email"><button class="button" name="send"><?php echo JText::_('COM_JEXPRICELIST_SEND_CALCULATION'); ?></button></a>
 <?php
 	}
 ?>
 <br/>
 <?php
 }
-?>
-<pre>
-	<?php
-		$var = $this->app->getUserStateFromRequest("$this->option", 'selected_in_request');
-		//$uri = JFactory::getURI();
-		//var_dump($this->uri->toString());
-	?>
-</pre>
