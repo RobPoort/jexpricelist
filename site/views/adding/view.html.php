@@ -21,6 +21,8 @@ class JexPricelistViewAdding extends JView
 		
 		$this->input = $this->app->input;
 		
+		$this->config = new stdClass();
+		
 		$this->config->emailOption = $this->input->get('emailOption');
 		
 		$this->data = JRequest::get('post');
