@@ -10,7 +10,7 @@
 	<copyright>Copyright 2012</copyright>
 	<license>License Info</license>
 	<!--  The version string is recorded in the components table -->
-	<version>0.1.00.0</version>
+	<version>0.1.01.0</version>
 	<!-- The description is optional and defaults to the name -->
 	<description>COM_JEXPRICELIST_DESCRIPTION</description>
 	
