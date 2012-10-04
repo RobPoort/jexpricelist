@@ -3,6 +3,7 @@ defined('_JEXEC') or die('restricted access');
 jimport('joomla.html.html');
 ?>
 
+
 <?php
 if($this->items){
 ?>

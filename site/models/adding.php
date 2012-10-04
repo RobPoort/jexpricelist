@@ -26,13 +26,17 @@ class JexPricelistModelAdding extends JModelItem
 	protected function populateState()
 	{
 		$app = JFactory::getApplication();
+		$this->input = $app->input;
 		
 		//get the message id
+		
 		$id = JRequest::getInt('id');
-		$catid = JRequest::getInt('catid');
+		$catid = $this->input->get('catid');
+		$id = $this->input->get('id');
+		
 		$this->setState('message.id', $id); //message moet misschien jexitem worden
 		$this->setState('category.id', $id);
-		$this->setState('jexklasse.id', $catid);
+		$this->setState('jexklasse.id', $catid);		
 		
 		//load the parameters
 		$params = $app->getParams();
