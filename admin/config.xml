@@ -3,7 +3,7 @@
 	<fieldset
 		name="items"
 		label="COM_JEXPRICELIST_CONFIG_ITEMS_SETTINGS_LABEL"
-		description="COM_JEXPRICELIST_CONFIG_ITEMS_SETTINGS_DESC"	
+		description="COM_JEXPRICELIST_CONFIG_COUNTRY_SETTINGS_DESC"	
 	>
 		<field
 			name="show_category"
