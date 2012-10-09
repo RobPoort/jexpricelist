@@ -21,6 +21,7 @@ DROP TABLE IF EXISTS `#__jexpricelist_valuta`;
 
 CREATE TABLE `#__jexpricelist_valuta` (
 	`id` int(11) NOT NULL AUTO_INCREMENT,
+	`active` int(1) NOT NULL DEFAULT '0',
 	`name` varchar(15) NOT NULL,
 	`html_char` varchar(8) NOT NULL,
 	`decimal_char` varchar(1) NOT NULL,
