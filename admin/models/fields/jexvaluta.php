@@ -16,11 +16,27 @@ class JFormFieldJexValuta extends JFormFieldList
 	
 	protected function getOptions()
 	{
-		$options = array();
+		// $options = array();
 		
-		$options[] = JHtml::_('select.option','1','Euro');
-		$options[] = JHtml::_('select.option','2','Dollar');
-		$options[] = JHtml::_('select.option','3','Yen');
+		// $options[] = JHtml::_('select.option','1','Euro');
+		// $options[] = JHtml::_('select.option','2','Dollar');
+		// $options[] = JHtml::_('select.option','3','Yen');
+		
+		$db = JFactory::getDBO();
+		$query = $db->getQuery(true);
+		$query->select('id,name');
+		$query->from('#__jexpricelist_valuta');
+		$db->setQuery($query);
+		$rows = $db->loadObjectList();
+		
+		$options = array();
+		if($rows)
+		{
+			foreach($rows as $row)
+			{
+				$options[] = JHtml::_('select.option', $row->id, ucwords($row->name));
+			}
+		}
 		
 		return $options;
 	}
