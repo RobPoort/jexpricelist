@@ -4,23 +4,13 @@
 		name="items"
 		label="COM_JEXPRICELIST_CONFIG_ITEMS_SETTINGS_LABEL"
 		description="COM_JEXPRICELIST_CONFIG_COUNTRY_SETTINGS_DESC"	
-	>
-		<field
-			name="show_category"
-			type="radio"
-			label="COM_JEXPRICELIST_JEXPRICELIST_FIELD_SHOW_CATEGORY_LABEL"
-			description="COM_JEXPRICELIST_JEXPRICELIST_FIELD_SHOW_CATEGORY_DESC"
-			default="0"
-		>
-			<option value="0">JHIDE</option>
-			<option value="1">JSHOW</option>
-		</field>
+	>		
 		<field
 				addfieldpath="/administrator/components/com_jexpricelist/models/fields"
 				name="valuta"
 				type="jexvaluta"
 				label="COM_JEXPRICELIST_FIELD_VALUTA_TITLE"
-				description=""
+				description="COM_JEXPRICELIST_FIELD_VALUTA_DESC"
 				default="1"
 				component="com_jexpricelist"
 		/>

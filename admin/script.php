@@ -15,7 +15,7 @@ class com_jexpricelistInstallerScript
 	function install($parent)
 	{
 		// $parent is the class calling this method
-		$parent->getParent()->setRedirectUrl('index.php?option=com_jexpricelist');
+		$parent->getPArent()->setRedirectUrl('index.php?option=com_jexpricelist');
 	}
 	
 	/**
