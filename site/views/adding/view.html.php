@@ -41,6 +41,9 @@ class JexPricelistViewAdding extends JView
 		if(isset($this->data['select'])){
 			$this->selected = $this->data['select'];
 		}
+		// set valuta
+		$this->valuta = $this->get('Valuta');		
+		
 		//set user data
 		$this->app->setUserState("$this->option.selected", $this->selected);
 		$this->app->setUserState("$this->option.selector", $this->selector);

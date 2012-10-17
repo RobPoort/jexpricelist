@@ -3,8 +3,8 @@ defined('_JEXEC') or die('restricted access');
 jimport('joomla.html.html');
 ?>
 
-
 <?php
+$valuta = $this->valuta;
 if($this->items){
 ?>
 <h1>
@@ -44,11 +44,11 @@ if($this->items){
 						?>
 					</td>
 					<td class="pricelist_colum" align="right">
-						<?php echo '&euro; '.number_format($price[$this->selector],2,',','.'); ?>
+						<?php echo $valuta->html_char.'&nbsp;'.number_format($price[$this->selector],2,$valuta->decimal_char,$valuta->m_char); ?>
 					</td>
 					<td class="pricelist_colum" align="right">
 						<?php if($checked != ''){
-						echo '&euro; '.number_format($price[$this->selector],2,',','.');  ?>						
+						echo $valuta->html_char.'&nbsp;'.number_format($price[$this->selector],2,$valuta->decimal_char,$valuta->m_char);  ?>						
 						<?php } ?>
 						<input type="hidden" name="item_price[<?php echo $item->id; ?>]" value="<?php echo $price[$this->selector]; ?>" />
 					</td>					
@@ -73,7 +73,8 @@ if($this->items){
 				
 			</td>
 			<td align="right">
-				<?php echo '&euro; '.number_format($this->state->totaal,2,',','.'); ?>
+				<?php //echo '&euro; '.number_format($this->state->totaal,2,',','.'); ?>
+				<?php echo $valuta->html_char.'&nbsp;'.number_format($this->state->totaal,2,$valuta->decimal_char,$valuta->m_char); ?>
 			</td>
 		</tr>
 	<?php
