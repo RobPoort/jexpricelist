@@ -8,7 +8,9 @@ $valuta = $this->valuta;
 if($this->items){
 ?>
 <h1>
-	Kostenoverzicht
+	<?php
+		echo JText::_('COM_JEXPRICELIST_ADDING_LIST');
+	?>
 </h1>
 <br />
 <br />
@@ -98,4 +100,8 @@ if($this->items){
 ?>
 <br/>
 <?php
+} else {
+	?>
+	<h2><?php echo JText::_('COM_JEXPRICELIST_NORESULT') ?></h2>
+	<?php
 }

@@ -144,5 +144,5 @@ class JexPricelistModelJexPricelist extends JModelItem
 			
 			return $this->valuta;
 		}
-	}
+	}	
 }

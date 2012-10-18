@@ -22,9 +22,9 @@ $valuta = $this->valuta;
 ?>
 	<tr>		
 		<td width="50%"><?php echo $item->price_item; ?></td>
-		<td><?php echo $item->price_1; ?></td>
-		<td><?php echo $item->price_2; ?></td>
-		<td><?php echo $item->price_3; ?></td>
+		<td><?php echo $valuta->html_char.'&nbsp;'.number_format($item->price_1,2,$valuta->decimal_char,$valuta->m_char); ?></td>
+		<td><?php echo $valuta->html_char.'&nbsp;'.number_format($item->price_2,2,$valuta->decimal_char,$valuta->m_char); ?></td>
+		<td><?php echo $valuta->html_char.'&nbsp;'.number_format($item->price_3,2,$valuta->decimal_char,$valuta->m_char); ?></td>
 		
 	</tr>
 <?php
@@ -33,7 +33,5 @@ $valuta = $this->valuta;
 </table>
 </form>
 <?php } else { ?>
-<h2>Geen resultaten</h2>
-<?php }; ?>
-<?php
-//var_dump($this->price_class);
+<h2><?php echo JText::_('COM_JEXPRICELIST_NORESULT'); ?></h2>
+<?php };
