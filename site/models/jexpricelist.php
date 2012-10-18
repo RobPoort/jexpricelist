@@ -124,4 +124,25 @@ class JexPricelistModelJexPricelist extends JModelItem
 		
 		return $this->price_class;
 	}
+	public function getValuta()
+	{
+		if(!isset($this->valuta))
+		{
+			// eerst de valuta id uit de parameters ophalen
+			$app = JFactory::getApplication();
+			$params = $app->getParams();			
+			$valuta_id = $params->get('valuta');
+			
+			//nu aan de hand hiervan uit de tabel de valuta info halen
+			$db = JFactory::getDBO();
+			$query = $db->getQuery(true);
+			$query->select('*');
+			$query->from('#__jexpricelist_valuta');
+			$query->where("id=$valuta_id");
+			$db->setQuery($query);
+			$this->valuta = $db->loadObject();
+			
+			return $this->valuta;
+		}
+	}
 }

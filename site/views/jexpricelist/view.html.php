@@ -10,7 +10,10 @@ class JexPricelistViewJexpricelist extends JView
 	{
 		//	assign data to the view		
 		$this->items = $this->get('Items');
-		$this->price_class = $this->get('PriceClass');		
+		$this->price_class = $this->get('PriceClass');
+		
+		// set valuta
+		$this->valuta = $this->get('Valuta');		
 		
 		//check for errors
 		if(count($errors = $this->get('Errors'))){

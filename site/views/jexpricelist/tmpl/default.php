@@ -1,9 +1,13 @@
 <?php
 defined('_JEXEC') or die('Restricted Access');
+
+$valuta = $this->valuta;
 ?>
 <?php if($this->items){ ?>
 <h1>
-	Lijst
+	<?php
+		echo JText::_('COM_JEXPRICELIST_SIMPLE_LIST');
+	?>
 </h1>
 <form action="<?php echo JRoute::_('index.php?option=com_jexpricelist'); ?>" method="post" >
 <table width="80%" class="pricelist_table" style="border:0;" border="0" cellpadding="0" cellspacing="0">

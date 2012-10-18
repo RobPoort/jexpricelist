@@ -72,8 +72,7 @@ if($this->items){
 				&nbsp;
 				
 			</td>
-			<td align="right">
-				<?php //echo '&euro; '.number_format($this->state->totaal,2,',','.'); ?>
+			<td align="right">				
 				<?php echo $valuta->html_char.'&nbsp;'.number_format($this->state->totaal,2,$valuta->decimal_char,$valuta->m_char); ?>
 			</td>
 		</tr>
