@@ -32,6 +32,3 @@ function myValidate(f) {
 	<button class="button" onClick="this.form.submit()" name="sendList">verzend</button>
 	<input type="hidden" name="task" value="email.process" />
 </form>
-<pre>
-	<?php //var_dump($this->state); ?>
-</pre>

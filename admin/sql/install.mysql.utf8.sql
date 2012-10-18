@@ -29,6 +29,10 @@ CREATE TABLE `#__jexpricelist_valuta` (
 	PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8;
 
+INSERT INTO `#__jexpricelist_valuta` (`name`,`html_char`,`decimal_char`,`m_char`) VALUES
+	('dollar','$','.',','),
+	('euro','&euro;',',','.');
+
 DROP TABLE IF EXISTS `#__jexpricelist_class`;
 
 CREATE TABLE `#__jexpricelist_class` (
