@@ -29,7 +29,37 @@
 			>
 				<option value="1">JYES</option>
 				<option value="0">JNO</option>
-			</field>			
+			</field>
+			<field
+				name="class_1"
+				type="radio"
+				label="COM_JEXPRICELIST_SHOW_CLASS1_TITLE"
+				description="COM_JEXPRICELIST_SHOW_CLASS1_DESC"
+				default="1"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field
+				name="class_2"
+				type="radio"
+				label="COM_JEXPRICELIST_SHOW_CLASS2_TITLE"
+				description="COM_JEXPRICELIST_SHOW_CLASS2_DESC"
+				default="1"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field
+				name="class_3"
+				type="radio"
+				label="COM_JEXPRICELIST_SHOW_CLASS3_TITLE"
+				description="COM_JEXPRICELIST_SHOW_CLASS3_DESC"
+				default="1"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
 		</fieldset>
 	</fields>
 </metadata>
