@@ -23,13 +23,19 @@ class JexPricelistViewAdding extends JView
 		$this->input = $this->app->input;
 		$this->config = new stdClass();
 		$this->config->emailOption = $this->input->get('emailOption');
-		$this->config->showTitle = $this->input->get('title');		
+		$this->config->showTitle = $this->input->get('title');	
+		$this->config->showSelector = $this->input->get('showSelector');
+		$this->config->useSelector = $this->input->get('useSelector');
 		
 		$this->data = JRequest::get('post');
 		if(!isset($this->state->selector)){
-			$selector = 1;
+			$this->selector = 1;
 		} elseif(isset($this->state->selector)){
 			$selector = $this->state->selector;
+		}		
+		if($this->config->showSelector == 0){
+			$this->selector = $this->config->useSelector;
+			$selector = $this->selector;
 		}
 		$this->selector = $selector;
 		

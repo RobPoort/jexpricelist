@@ -18,6 +18,9 @@ if($this->config->showTitle){
 ?>
 <br />
 <br />
+<?php
+	if($this->config->showSelector){
+?>
 <fieldset class="selector">
 <form action="" method="post" >
 	<select name="selector" onChange="this.form.submit()">		
@@ -28,6 +31,9 @@ if($this->config->showTitle){
 	<input type="hidden" name="task" value="adding.selector" />
 </form>
 </fieldset>
+<?php
+	}
+?>
 <br/>
 <table width="100%" class="pricelist_table" style="border:0;" border="0" cellpadding="0" cellspacing="0">
 <form action="" method="post" >

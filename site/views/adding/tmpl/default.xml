@@ -40,6 +40,28 @@
 				<option value="1">JYES</option>
 				<option value="0">JNO</option>
 			</field>
+			<field
+				name="useSelector"
+				type="list"
+				label="COM_JEXPRICELIST_USE_SELECTOR_TITLE"
+				description="COM_JEXPRICELIST_USE_SELECTOR_DESC"
+				default="1"
+			>
+				<option value="1">COM_JEXPRICELIST_SHOW_CLASS1_TITLE</option>
+				<option value="2">COM_JEXPRICELIST_SHOW_CLASS2_TITLE</option>
+				<option value="3">COM_JEXPRICELIST_SHOW_CLASS3_TITLE</option>
+			</field>
+			<field
+				name="showSelector"
+				type="list"
+				label="COM_JEXPRICELIST_SHOW_SELECTOR_TITLE"
+				description="COM_JEXPRICELIST_SHOW_SELECTOR_DESC"
+				default="1"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+
 		</fieldset>
 	</fields>
 </metadata>
