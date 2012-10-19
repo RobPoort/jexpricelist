@@ -13,7 +13,14 @@ class JexPricelistViewJexpricelist extends JView
 		$this->price_class = $this->get('PriceClass');
 		
 		// set valuta
-		$this->valuta = $this->get('Valuta');		
+		$this->valuta = $this->get('Valuta');
+
+		//configuratie ophalen
+		$this->app = JFactory::getApplication();
+		$this->input = $this->app->input;
+		$this->config = new stdClass();
+		$this->config->emailOption = $this->input->get('emailOption');
+		$this->config->showTitle = $this->input->get('title');
 		
 		//check for errors
 		if(count($errors = $this->get('Errors'))){

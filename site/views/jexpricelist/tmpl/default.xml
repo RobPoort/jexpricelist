@@ -19,7 +19,17 @@
 				type="jexklasse"
 				label="COM_JEXPRICELIST_JEXCLASS_FIELD_CLASS_LABEL"
 				description="COM_JEXPRICELIST_JEXCLASS_FIELD_CLASS_DESC"
-			/>			
+			/>
+			<field
+				name="title"
+				type="list"
+				label="COM_JEXPRICELIST_SHOW_TITLE_TITLE"
+				description="COM_JEXPRICELIST_SHOW_TITLE_DESC"
+				default="1"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>			
 		</fieldset>
 	</fields>
 </metadata>

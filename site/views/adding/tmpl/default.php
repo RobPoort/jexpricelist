@@ -6,12 +6,16 @@ jimport('joomla.html.html');
 <?php
 $valuta = $this->valuta;
 if($this->items){
-?>
-<h1>
-	<?php
-		echo JText::_('COM_JEXPRICELIST_ADDING_LIST');
+if($this->config->showTitle){
 	?>
-</h1>
+	<h1>
+		<?php
+			echo JText::_('COM_JEXPRICELIST_ADDING_LIST');
+		?>
+	</h1>
+	<?php
+}
+?>
 <br />
 <br />
 <fieldset class="selector">
