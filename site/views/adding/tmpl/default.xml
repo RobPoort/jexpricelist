@@ -61,6 +61,26 @@
 				<option value="1">JYES</option>
 				<option value="0">JNO</option>
 			</field>
+			<field
+				name="showCss"
+				type="list"
+				label="COM_JEXPRICELIST_SHOW_CSS_TITLE"
+				description="COM_JEXPRICELIST_SHOW_CSS_DESC"
+				default="0"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field
+				name="useCss"
+				type="list"
+				label="COM_JEXPRICELIST_USE_CSS_TITLE"
+				description="COM_JEXPRICELIST_USE_CSS_DESC"
+				default="jex1.css"
+			>
+				<option value="jex1.css">Template 1</option>
+				<option value="jex2.css">Template 2</option>
+			</field>
 
 		</fieldset>
 	</fields>

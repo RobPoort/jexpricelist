@@ -20,7 +20,9 @@ class JexPricelistViewJexpricelist extends JView
 		$this->input = $this->app->input;
 		$this->config = new stdClass();
 		$this->config->emailOption = $this->input->get('emailOption');
-		$this->config->showTitle = $this->input->get('title');		
+		$this->config->showTitle = $this->input->get('title');
+		$this->config->showCss = $this->input->get('showCss');
+		$this->config->css_file = $this->input->get('useCss');
 		
 		$this->config->class_1 = $this->input->get('class_1');
 		$this->config->class_2 = $this->input->get('class_2');

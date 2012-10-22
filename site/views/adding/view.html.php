@@ -26,6 +26,10 @@ class JexPricelistViewAdding extends JView
 		$this->config->showTitle = $this->input->get('title');	
 		$this->config->showSelector = $this->input->get('showSelector');
 		$this->config->useSelector = $this->input->get('useSelector');
+		$this->config->showCss = $this->input->get('showCss');
+		$this->config->css_file = $this->input->get('useCss');
+		
+		
 		
 		$this->data = JRequest::get('post');
 		if(!isset($this->state->selector)){

@@ -3,6 +3,12 @@ defined('_JEXEC') or die('Restricted Access');
 
 $valuta = $this->valuta;
 $config = $this->config;
+$css_file = $config->css_file;
+$css_path = 'components/com_jexpricelist/css/';
+//kijken of css toegevoegd moet worden
+if($config->showCss){
+	JHtml::stylesheet($css_file,$css_path);
+}
 ?>
 
 <?php 

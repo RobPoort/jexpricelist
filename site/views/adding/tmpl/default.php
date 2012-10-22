@@ -1,12 +1,21 @@
 <?php
 defined('_JEXEC') or die('restricted access');
 jimport('joomla.html.html');
+
+$valuta = $this->valuta;
+$config = $this->config;
+$css_file = $config->css_file;
+$css_path = 'components/com_jexpricelist/css/';
+// kijken of css toegevoegd moet worden
+if($config->showCss){
+JHtml::stylesheet($css_file,$css_path);
+}
 ?>
 
 <?php
-$valuta = $this->valuta;
+
 if($this->items){
-if($this->config->showTitle){
+if($config->showTitle){
 	?>
 	<h1>
 		<?php
@@ -19,7 +28,7 @@ if($this->config->showTitle){
 <br />
 <br />
 <?php
-	if($this->config->showSelector){
+	if($config->showSelector){
 ?>
 <fieldset class="selector">
 <form action="" method="post" >
@@ -102,7 +111,7 @@ if($this->config->showTitle){
 </form>
 <div class="clr"></div>
 <?php
-	if($this->config->emailOption){
+	if($config->emailOption){
 ?>
 <a  class="button" href="<?php echo $this->uri->toString(); ?>/?view=email"><button class="button" name="send"><?php echo JText::_('COM_JEXPRICELIST_SEND_CALCULATION'); ?></button></a>
 <?php
