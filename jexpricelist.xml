@@ -40,6 +40,7 @@
 		<folder>models</folder>
 		<folder>language</folder>
 		<folder>controllers</folder>
+		<folder>css</folder>
 	</files>
 	
 	<media destination="com_jexpricelist" folder="media">
