@@ -1,3 +1,61 @@
-.pricelist_colum{
-background-color:black;
+.pricelist_colum {
+
+}
+
+.pricelist_table {
+
+}
+
+.pricelist_table tr {
+border: 0;
+}
+
+.pricelist_table td {
+border: 0;
+}
+
+.pricelist_item {
+
+}
+
+.no-result {
+color: red;
+font-size: 14px;
+}
+
+.pricelist_colum {
+
+}
+
+.pricelist_colum_checked {
+color: #98BE01;
+}
+
+.pricelist_total {
+color: red;
+font-weight: bold;
+}
+
+.pricelist_table .class_text1 {
+
+}
+
+.pricelist_table .class_text2 {
+
+}
+
+.pricelist_table .class_text3 {
+
+}
+
+.pricelist_table .item_price1 {
+
+}
+
+.pricelist_table .item_price2 {
+
+}
+
+.pricelist_table .item_price3 {
+
 }

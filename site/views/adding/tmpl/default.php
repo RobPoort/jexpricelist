@@ -59,7 +59,7 @@ if($config->showTitle){
 					<td>
 						<input type="checkbox" name="select[<?php echo $item->id; ?>]" value="<?php echo $item->id; ?>" <?php echo $checked; ?> />
 					</td>
-					<td >
+					<td class="pricelist_item">
 						<?php		
 						echo $item->price_item;						
 						?>
@@ -67,7 +67,7 @@ if($config->showTitle){
 					<td class="pricelist_colum" align="right">
 						<?php echo $valuta->html_char.'&nbsp;'.number_format($price[$this->selector],2,$valuta->decimal_char,$valuta->m_char); ?>
 					</td>
-					<td class="pricelist_colum" align="right">
+					<td class="pricelist_colum_checked" align="right">
 						<?php if($checked != ''){
 						echo $valuta->html_char.'&nbsp;'.number_format($price[$this->selector],2,$valuta->decimal_char,$valuta->m_char);  ?>						
 						<?php } ?>
@@ -93,7 +93,7 @@ if($config->showTitle){
 				&nbsp;
 				
 			</td>
-			<td align="right">				
+			<td align="right" class="pricelist_total">				
 				<?php echo $valuta->html_char.'&nbsp;'.number_format($this->state->totaal,2,$valuta->decimal_char,$valuta->m_char); ?>
 			</td>
 		</tr>
@@ -121,6 +121,6 @@ if($config->showTitle){
 <?php
 } else {
 	?>
-	<h2><?php echo JText::_('COM_JEXPRICELIST_NORESULT') ?></h2>
+	<span class="no-result"><?php echo JText::_('COM_JEXPRICELIST_NORESULT') ?></span>
 	<?php
 }

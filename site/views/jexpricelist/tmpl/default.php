@@ -30,21 +30,21 @@ if($this->items){
 	<?php
 		if($config->class_1){
 	?>
-	<th><?php echo $this->price_class->text_1; ?></th>
+	<th class="class_text1"><?php echo $this->price_class->text_1; ?></th>
 	<?php
 	}
 	?>
 	<?php 
 		if($config->class_2){
 	?>
-	<th><?php echo $this->price_class->text_2; ?></th>
+	<th class="class_text2"><?php echo $this->price_class->text_2; ?></th>
 	<?php
 	}
 	?>
 	<?php
 		if($config->class_3){
 	?>
-	<th><?php echo $this->price_class->text_3; ?></th>
+	<th class="class_text3"><?php echo $this->price_class->text_3; ?></th>
 	<?php
 	}
 	?>
@@ -53,25 +53,25 @@ if($this->items){
 	foreach($this->items as $item){
 ?>
 	<tr>		
-		<td width="50%"><?php echo $item->price_item; ?></td>
+		<td width="50%" class="class_title"><?php echo $item->price_item; ?></td>
 		<?php
 		if($config->class_1){
 		?>
-		<td><?php echo $valuta->html_char.'&nbsp;'.number_format($item->price_1,2,$valuta->decimal_char,$valuta->m_char); ?></td>
+		<td class="item_price1"><?php echo $valuta->html_char.'&nbsp;'.number_format($item->price_1,2,$valuta->decimal_char,$valuta->m_char); ?></td>
 		<?php
 		}
 		?>
 		<?php
 		if($config->class_2){
 		?>
-		<td><?php echo $valuta->html_char.'&nbsp;'.number_format($item->price_2,2,$valuta->decimal_char,$valuta->m_char); ?></td>
+		<td class="item_price2"><?php echo $valuta->html_char.'&nbsp;'.number_format($item->price_2,2,$valuta->decimal_char,$valuta->m_char); ?></td>
 		<?php
 		}
 		?>
 		<?php
 		if($config->class_3){
 		?>
-		<td><?php echo $valuta->html_char.'&nbsp;'.number_format($item->price_3,2,$valuta->decimal_char,$valuta->m_char); ?></td>
+		<td class="item_price3"><?php echo $valuta->html_char.'&nbsp;'.number_format($item->price_3,2,$valuta->decimal_char,$valuta->m_char); ?></td>
 		<?php
 		}
 		?>		
@@ -82,5 +82,5 @@ if($this->items){
 </table>
 </form>
 <?php } else { ?>
-<h2><?php echo JText::_('COM_JEXPRICELIST_NORESULT'); ?></h2>
+<span class="no-result"><?php echo JText::_('COM_JEXPRICELIST_NORESULT'); ?></span>
 <?php };
